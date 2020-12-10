@@ -18,6 +18,10 @@
 		C1C50A0D2582D97F00034474 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */; };
 		C1C50A122582D9A800034474 /* EntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A112582D9A800034474 /* EntriesViewController.swift */; };
 		C1C50A172582D9BA00034474 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A162582D9BA00034474 /* TripsViewController.swift */; };
+		C1C50A3E2582E2A300034474 /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A3A2582E2A300034474 /* Entry+CoreDataClass.swift */; };
+		C1C50A3F2582E2A300034474 /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A3B2582E2A300034474 /* Entry+CoreDataProperties.swift */; };
+		C1C50A402582E2A300034474 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A3C2582E2A300034474 /* Trip+CoreDataClass.swift */; };
+		C1C50A412582E2A300034474 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A3D2582E2A300034474 /* Trip+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
 		C1C50A112582D9A800034474 /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
 		C1C50A162582D9BA00034474 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		C1C50A3A2582E2A300034474 /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C1C50A3B2582E2A300034474 /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C1C50A3C2582E2A300034474 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C1C50A3D2582E2A300034474 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,10 @@
 		C1C509C72582D3FA00034474 = {
 			isa = PBXGroup;
 			children = (
+				C1C50A3A2582E2A300034474 /* Entry+CoreDataClass.swift */,
+				C1C50A3B2582E2A300034474 /* Entry+CoreDataProperties.swift */,
+				C1C50A3C2582E2A300034474 /* Trip+CoreDataClass.swift */,
+				C1C50A3D2582E2A300034474 /* Trip+CoreDataProperties.swift */,
 				C1C509D22582D3FA00034474 /* TravelogueMgckq8 */,
 				C1C509EC2582D3FB00034474 /* TravelogueMgckq8Tests */,
 				C1C509F72582D3FB00034474 /* TravelogueMgckq8UITests */,
@@ -105,16 +117,10 @@
 		C1C509D22582D3FA00034474 /* TravelogueMgckq8 */ = {
 			isa = PBXGroup;
 			children = (
-				C1C509D32582D3FA00034474 /* AppDelegate.swift */,
-				C1C509D52582D3FA00034474 /* SceneDelegate.swift */,
+				C1C50A2C2582DFB100034474 /* ViewControllers */,
+				C1C50A2B2582DF8300034474 /* SupportingFiles */,
+				C1C50A2A2582DF5B00034474 /* CoreDataEntities */,
 				C1C509D92582D3FA00034474 /* Main.storyboard */,
-				C1C50A112582D9A800034474 /* EntriesViewController.swift */,
-				C1C50A162582D9BA00034474 /* TripsViewController.swift */,
-				C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */,
-				C1C509DF2582D3FB00034474 /* Assets.xcassets */,
-				C1C509E12582D3FB00034474 /* LaunchScreen.storyboard */,
-				C1C509E42582D3FB00034474 /* Info.plist */,
-				C1C509DC2582D3FA00034474 /* TravelogueMgckq8.xcdatamodeld */,
 			);
 			path = TravelogueMgckq8;
 			sourceTree = "<group>";
@@ -135,6 +141,36 @@
 				C1C509FA2582D3FB00034474 /* Info.plist */,
 			);
 			path = TravelogueMgckq8UITests;
+			sourceTree = "<group>";
+		};
+		C1C50A2A2582DF5B00034474 /* CoreDataEntities */ = {
+			isa = PBXGroup;
+			children = (
+				C1C509DC2582D3FA00034474 /* TravelogueMgckq8.xcdatamodeld */,
+			);
+			path = CoreDataEntities;
+			sourceTree = "<group>";
+		};
+		C1C50A2B2582DF8300034474 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C1C509D52582D3FA00034474 /* SceneDelegate.swift */,
+				C1C509D32582D3FA00034474 /* AppDelegate.swift */,
+				C1C509DF2582D3FB00034474 /* Assets.xcassets */,
+				C1C509E42582D3FB00034474 /* Info.plist */,
+				C1C509E12582D3FB00034474 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C1C50A2C2582DFB100034474 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1C50A112582D9A800034474 /* EntriesViewController.swift */,
+				C1C50A162582D9BA00034474 /* TripsViewController.swift */,
+				C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +305,13 @@
 			files = (
 				C1C509D42582D3FA00034474 /* AppDelegate.swift in Sources */,
 				C1C509DE2582D3FA00034474 /* TravelogueMgckq8.xcdatamodeld in Sources */,
+				C1C50A3E2582E2A300034474 /* Entry+CoreDataClass.swift in Sources */,
 				C1C50A0D2582D97F00034474 /* NewEntryViewController.swift in Sources */,
 				C1C50A172582D9BA00034474 /* TripsViewController.swift in Sources */,
 				C1C50A122582D9A800034474 /* EntriesViewController.swift in Sources */,
+				C1C50A3F2582E2A300034474 /* Entry+CoreDataProperties.swift in Sources */,
+				C1C50A402582E2A300034474 /* Trip+CoreDataClass.swift in Sources */,
+				C1C50A412582E2A300034474 /* Trip+CoreDataProperties.swift in Sources */,
 				C1C509D62582D3FA00034474 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
