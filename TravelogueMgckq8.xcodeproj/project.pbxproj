@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		C1C509D42582D3FA00034474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C509D32582D3FA00034474 /* AppDelegate.swift */; };
 		C1C509D62582D3FA00034474 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C509D52582D3FA00034474 /* SceneDelegate.swift */; };
-		C1C509D82582D3FA00034474 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C509D72582D3FA00034474 /* ViewController.swift */; };
 		C1C509DB2582D3FA00034474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C509D92582D3FA00034474 /* Main.storyboard */; };
 		C1C509DE2582D3FA00034474 /* TravelogueMgckq8.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1C509DC2582D3FA00034474 /* TravelogueMgckq8.xcdatamodeld */; };
 		C1C509E02582D3FB00034474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C509DF2582D3FB00034474 /* Assets.xcassets */; };
 		C1C509E32582D3FB00034474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C509E12582D3FB00034474 /* LaunchScreen.storyboard */; };
 		C1C509EE2582D3FB00034474 /* TravelogueMgckq8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C509ED2582D3FB00034474 /* TravelogueMgckq8Tests.swift */; };
 		C1C509F92582D3FB00034474 /* TravelogueMgckq8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C509F82582D3FB00034474 /* TravelogueMgckq8UITests.swift */; };
+		C1C50A0D2582D97F00034474 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */; };
+		C1C50A122582D9A800034474 /* EntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A112582D9A800034474 /* EntriesViewController.swift */; };
+		C1C50A172582D9BA00034474 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C50A162582D9BA00034474 /* TripsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		C1C509D02582D3FA00034474 /* TravelogueMgckq8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelogueMgckq8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C509D32582D3FA00034474 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C509D52582D3FA00034474 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1C509D72582D3FA00034474 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1C509DA2582D3FA00034474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1C509DD2582D3FA00034474 /* TravelogueMgckq8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelogueMgckq8.xcdatamodel; sourceTree = "<group>"; };
 		C1C509DF2582D3FB00034474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		C1C509F42582D3FB00034474 /* TravelogueMgckq8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelogueMgckq8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C509F82582D3FB00034474 /* TravelogueMgckq8UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelogueMgckq8UITests.swift; sourceTree = "<group>"; };
 		C1C509FA2582D3FB00034474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
+		C1C50A112582D9A800034474 /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
+		C1C50A162582D9BA00034474 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 			children = (
 				C1C509D32582D3FA00034474 /* AppDelegate.swift */,
 				C1C509D52582D3FA00034474 /* SceneDelegate.swift */,
-				C1C509D72582D3FA00034474 /* ViewController.swift */,
 				C1C509D92582D3FA00034474 /* Main.storyboard */,
+				C1C50A112582D9A800034474 /* EntriesViewController.swift */,
+				C1C50A162582D9BA00034474 /* TripsViewController.swift */,
+				C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */,
 				C1C509DF2582D3FB00034474 /* Assets.xcassets */,
 				C1C509E12582D3FB00034474 /* LaunchScreen.storyboard */,
 				C1C509E42582D3FB00034474 /* Info.plist */,
@@ -261,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1C509D82582D3FA00034474 /* ViewController.swift in Sources */,
 				C1C509D42582D3FA00034474 /* AppDelegate.swift in Sources */,
 				C1C509DE2582D3FA00034474 /* TravelogueMgckq8.xcdatamodeld in Sources */,
+				C1C50A0D2582D97F00034474 /* NewEntryViewController.swift in Sources */,
+				C1C50A172582D9BA00034474 /* TripsViewController.swift in Sources */,
+				C1C50A122582D9A800034474 /* EntriesViewController.swift in Sources */,
 				C1C509D62582D3FA00034474 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
