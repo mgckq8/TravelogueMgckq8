@@ -6,24 +6,31 @@
 //
 
 import UIKit
+import CoreData
 
 class EntriesViewController: UITableViewController {
 
+    @IBOutlet var entriesTableView: UITableView!
+    
+    var entries : [Entry]
+    var trip: Trip
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        // Do any additional setup after loading the view.
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = entriesTableView.dequeueReusableCell(withIdentifier: "entriesCell", for: indexPath)
+        if let entry = trip.entries[indexPath.row]{
+            cell.textLabel.text = entry.entryTitle
+        }
+        return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            deleteEntry(at: indexPath)
+        }
     }
-    */
-
 }

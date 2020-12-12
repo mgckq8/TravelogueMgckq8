@@ -11,5 +11,26 @@ import CoreData
 
 @objc(Entry)
 public class Entry: NSManagedObject {
-
+    var date: Date?{
+        get{
+            return rawDate as Date?
+        }
+        set{
+            rawDate = newValue as NSDate?
+        }
+    }
+    var image: UIImage? {
+        get {
+            if let imageData = picture as Data? {
+                return UIImage(data: imageData)
+            } else {
+                return nil
+            }
+        }
+        set {
+            if let image = newValue {
+                picture = convertImage(image: image)
+            }
+        }
+    }
 }

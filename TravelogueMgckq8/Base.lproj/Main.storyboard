@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UlW-Bg-u5j">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripsCell" id="UlW-Bg-u5j">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UlW-Bg-u5j" id="8LM-xS-jfh">
@@ -38,6 +38,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tripsTableView" destination="rG9-wr-B1r" id="Lsf-I0-hdd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFj-Qe-1Xc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nbQ-b5-SCZ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entriesCell" id="nbQ-b5-SCZ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nbQ-b5-SCZ" id="sbP-YG-5eI">
@@ -76,6 +79,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entriesTableView" destination="IZX-L7-ST7" id="9hv-rH-LeN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTJ-GE-R6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,8 +135,16 @@
                                 <rect key="frame" x="9" y="826" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" image="camera" catalog="system" id="PnI-VC-fW1"/>
-                                    <barButtonItem image="folder" catalog="system" style="plain" id="4aK-re-v5B"/>
+                                    <barButtonItem title="Item" image="camera" catalog="system" id="PnI-VC-fW1">
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="YTR-fm-WGY" id="0Zl-68-bVQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="folder" catalog="system" style="plain" id="4aK-re-v5B">
+                                        <connections>
+                                            <action selector="libraryButtonPressed:" destination="YTR-fm-WGY" id="HO8-r9-IOC"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -161,6 +175,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q9O-IV-evP"/>
+                    <connections>
+                        <outlet property="datePicker" destination="NPS-JU-5SR" id="fF6-8L-VIX"/>
+                        <outlet property="descriptionTextView" destination="4Qg-CK-qRR" id="NPV-Jt-Q0b"/>
+                        <outlet property="imageView" destination="fz4-V3-Jq2" id="HOr-xd-Vvy"/>
+                        <outlet property="titleTextField" destination="SDk-8N-S0M" id="wnV-pA-l0P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mlm-Pl-kOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

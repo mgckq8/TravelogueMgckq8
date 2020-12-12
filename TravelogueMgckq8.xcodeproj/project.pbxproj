@@ -59,9 +59,9 @@
 		C1C50A0C2582D97F00034474 /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
 		C1C50A112582D9A800034474 /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
 		C1C50A162582D9BA00034474 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
-		C1C50A3A2582E2A300034474 /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C1C50A3A2582E2A300034474 /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Entry+CoreDataClass.swift"; path = "../../Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C1C50A3B2582E2A300034474 /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C1C50A3C2582E2A300034474 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C1C50A3C2582E2A300034474 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Trip+CoreDataClass.swift"; path = "../../Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C1C50A3D2582E2A300034474 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,10 +93,6 @@
 		C1C509C72582D3FA00034474 = {
 			isa = PBXGroup;
 			children = (
-				C1C50A3A2582E2A300034474 /* Entry+CoreDataClass.swift */,
-				C1C50A3B2582E2A300034474 /* Entry+CoreDataProperties.swift */,
-				C1C50A3C2582E2A300034474 /* Trip+CoreDataClass.swift */,
-				C1C50A3D2582E2A300034474 /* Trip+CoreDataProperties.swift */,
 				C1C509D22582D3FA00034474 /* TravelogueMgckq8 */,
 				C1C509EC2582D3FB00034474 /* TravelogueMgckq8Tests */,
 				C1C509F72582D3FB00034474 /* TravelogueMgckq8UITests */,
@@ -146,6 +142,10 @@
 		C1C50A2A2582DF5B00034474 /* CoreDataEntities */ = {
 			isa = PBXGroup;
 			children = (
+				C1C50A3A2582E2A300034474 /* Entry+CoreDataClass.swift */,
+				C1C50A3B2582E2A300034474 /* Entry+CoreDataProperties.swift */,
+				C1C50A3C2582E2A300034474 /* Trip+CoreDataClass.swift */,
+				C1C50A3D2582E2A300034474 /* Trip+CoreDataProperties.swift */,
 				C1C509DC2582D3FA00034474 /* TravelogueMgckq8.xcdatamodeld */,
 			);
 			path = CoreDataEntities;
